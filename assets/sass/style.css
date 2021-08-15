@@ -1,0 +1,246 @@
+header {
+  float: left;
+  position: fixed;
+  top: 0%;
+  width: 100vw;
+  background-color: #ffba00;
+  z-index: 1;
+}
+
+header .limiter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-ele {
+  list-style-type: none;
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-ele .header-text {
+  position: relative;
+}
+
+.header-ele .header-text img {
+  -webkit-transition: .1s all linear;
+  transition: .1s all linear;
+  position: relative;
+  top: 3px;
+}
+
+.header-ele .header-text > a {
+  font-weight: 600;
+  font-size: .9rem;
+  line-height: 60px;
+  margin: 0 2rem;
+  -webkit-transition: .1s all linear;
+  transition: .1s all linear;
+}
+
+.header-ele .header-text:hover > a {
+  color: #fff;
+}
+
+.dropdown {
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  list-style-type: none;
+  min-width: 20ch;
+  display: none;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown a {
+  color: black;
+  padding: 13px;
+  display: block;
+  line-height: 2rem;
+}
+
+.dropdown a:hover {
+  background-color: #d3cbcb;
+}
+
+.header-text:hover .dropdown,
+.others-icon:hover + .dropdown {
+  display: block;
+}
+
+.header-text:hover img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.header__right .right__icon:hover {
+  cursor: pointer;
+}
+
+.header__right .right__icon {
+  padding: 20px;
+  position: relative;
+}
+
+.header__right .others-icon {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.hero {
+  margin: 100px 0;
+  overflow-x: hidden;
+}
+
+.hero img {
+  width: 100%;
+  border-radius: 40px;
+}
+
+.hero__thongbao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #ffffff;
+  width: 80%;
+  margin: auto;
+  position: relative;
+  top: -50px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 40px rgba(100, 100, 100, 0.3);
+          box-shadow: 0 0 40px rgba(100, 100, 100, 0.3);
+}
+
+.hero__thongbao a {
+  padding: 5px;
+  line-height: 4;
+  font-weight: 500;
+}
+
+.hero__thongbao a:hover {
+  color: #FF4C29;
+}
+
+.course {
+  padding: 3rem;
+}
+
+.course h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 2rem;
+}
+
+.course .viewall-wrapper {
+  text-align: center;
+  margin: 10vh 0;
+}
+
+.course .viewall {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+}
+
+.course__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px;
+  border-radius: 20px;
+  margin: 3rem 0;
+}
+
+.course__card img {
+  border-radius: 15px;
+  width: 50%;
+}
+
+.course__card .card__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.course__card .card__name {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1rem;
+}
+
+.course__card .card__level {
+  margin: 1rem;
+  font-weight: 400;
+  color: #7f8c8d;
+}
+
+.course__header {
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Gilroy", sans-serif;
+}
+
+html {
+  font-size: clamp(14px, 2.5vmin, 20px);
+  line-height: 1.6;
+}
+
+.limiter {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+/*# sourceMappingURL=style.css.map */

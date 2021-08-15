@@ -1,0 +1,73 @@
+header
+  float: left
+  position: fixed
+  top: 0%
+  width: 100vw
+  background-color: rgb(255, 186, 0)
+  z-index: 1
+  .limiter
+    display: flex
+    align-items: center
+    justify-content: space-between
+  .header__left
+    display: flex
+    align-items: center
+
+.header-ele
+  list-style-type: none
+  display: inline-block
+  display: flex
+
+  .header-text
+    position: relative
+    img
+      transition: .1s all linear
+      position: relative
+      top: 3px
+    &>a
+      font-weight: 600
+      font-size: .9rem
+      line-height: 60px
+      margin: 0 2rem
+      transition: .1s all linear
+
+    &:hover>a
+      color: #fff
+
+.dropdown
+  background-color: #fff
+  position: absolute
+  right: 0
+  list-style-type: none
+  min-width: 20ch
+  display: none
+  overflow: hidden
+  border-radius: 10px
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3)
+
+  a
+    color: black
+    padding: 13px
+    display: block
+    line-height: 2rem
+
+  a:hover
+    background-color: rgb(211, 203, 203)
+
+.header-text:hover .dropdown,
+.others-icon:hover + .dropdown
+  display: block
+
+.header-text:hover img
+  filter: invert(1)
+
+.header__right
+  .right__icon:hover
+    cursor: pointer
+
+  .right__icon
+    padding: 20px
+    position: relative
+
+  .others-icon
+    transform: scale(1.4)
